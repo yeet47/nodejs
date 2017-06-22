@@ -1,0 +1,54 @@
+body {
+    background: #fafafa;
+}
+* {
+    font-family: Lucida Sans Typewriter,Lucida Console,monaco,Bitstream Vera Sans Mono,monospace;
+}
+form {
+    position: fixed;
+    left: 50%;
+    width: 360px;
+    margin-left: -180px;
+    top: 50%;
+    margin-top: -100px;
+    background: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+}
+form > input {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+form > input:focus {
+    outline: none;
+}
+.submit {
+    background: white;
+    font-size: 24px;
+    height: 50px;
+    margin-bottom: 0px;
+    background: #336699;
+    border: solid 3px #4477aa;
+    color: white;
+    border-radius: 5px;
+}
+.submit:hover {
+    cursor: pointer;
+}
+.blue {
+    position: fixed;
+    background: #336699;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    height: 50%;
+}
+form > p {
+    text-align: center;
+    color: #ff0000;
+    font-size: 20px;
+    margin: 5px;
+}
