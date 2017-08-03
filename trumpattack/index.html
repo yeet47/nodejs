@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Trump Attack</title>
+
+        <style>
+        body {
+            background-image: url('https://blogs-images.forbes.com/robertwood/files/2016/02/Trump1.jpg');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+        }
+        input {
+            height: 40px;
+            font-size: 20px;
+        }
+        h1 {
+            margin-top: 200px;
+            color: white;
+            font-size: 100px;
+        }
+        p {
+            color: white;
+            font-size: 40px;
+        }
+        </style>
+    </head>
+    <body>
+
+        <!-- <select id="product">
+            <option value="1">1 message ($1.00)</option>
+            <option value="5">5 messages ($2.00)</option>
+            <option value="10">10 messages ($3.00)</option>
+        </select> -->
+        <h1>Trump Attack</h1>
+        <p>Enter the number of someone you want to send a Trump text to.</p>
+
+        <form action="/charge" method="POST">
+            <input name="phone" id="phone" placeholder="phone number">
+              <script
+                src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                data-key="pk_test_ueha6GgLY8uoNw24G8D4jXlN"
+                data-amount="100"
+                data-name="Trump Attack"
+                data-description="Send a trump attack to your unsuspecting liberal friends."
+                data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                data-locale="auto">
+              </script>
+        </form>
+
+        <!-- <img src="https://blogs-images.forbes.com/robertwood/files/2016/02/Trump1.jpg"> -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+        $('#product').change(function() {
+            console.log($('#product').val());
+        });
+        </script>
+    </body>
+</html>
